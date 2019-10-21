@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgk1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".komponenaktivitas">
+
+    <TextView
+        android:id="@+id/JudulAktivitas"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/txtbtn1"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/isiaktivitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/isiaktivitas"
+        android:layout_width="376dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="28dp"
+        android:gravity="fill"
+        android:text="@string/isiaktv1"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JudulAktivitas" />
+
+    <Button
+        android:id="@+id/btnaktv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="47dp"
+        android:background="@color/colorAccent"
+        android:text="@string/link"
+        android:onClick="open1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnaktv2"
+        app:layout_constraintTop_toBottomOf="@+id/isiaktivitas6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnaktv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="47dp"
+        android:background="@color/colorAccent"
+        android:text="@string/syn"
+        android:onClick="open2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiaktivitas6"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

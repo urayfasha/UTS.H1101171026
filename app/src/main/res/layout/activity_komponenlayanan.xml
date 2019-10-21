@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgk2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".komponenlayanan">
+
+    <Button
+        android:id="@+id/btnlyn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:background="@color/colorAccent"
+        android:text="@string/link"
+        android:onClick="open3"
+        app:layout_constraintEnd_toStartOf="@+id/btnlyn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isikom2" />
+
+    <Button
+        android:id="@+id/btnlyn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorAccent"
+        android:text="@string/syn"
+        android:onClick="open4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isikom2" />
+
+    <TextView
+        android:id="@+id/isikom2"
+        android:layout_width="403dp"
+        android:layout_height="309dp"
+        android:layout_marginTop="36dp"
+        android:gravity="fill"
+        android:text="@string/isikom2"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JudulLayanan" />
+
+    <TextView
+        android:id="@+id/JudulLayanan"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="@string/txtbtn2"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/isikom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

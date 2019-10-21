@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgk5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".activity_komponentintent">
+
+    <Button
+        android:id="@+id/btnintent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="255dp"
+        android:background="@color/colorAccent"
+        android:text="@string/link"
+        android:onClick="open9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnintent2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnintent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorAccent"
+        android:text="@string/syn"
+        android:onClick="open10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isikom5" />
+
+    <TextView
+        android:id="@+id/isikom5"
+        android:layout_width="397dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="22dp"
+        android:gravity="fill"
+        android:text="@string/dalam_sebuah_pertandingan_sepakbola_rekan_satu_tim_mengoper_bola_di_lapangan_dengan_tujuan_untuk_memasukkannya_ke_gawang_lawan_bola_dioper_dari_penjaga_gawang_ke_pemain_bertahan_lalu_bola_sampai_ke_pemain_tengah_dan_jika_semua_berjalan_seperti_rencana_satu_penyerang_menyarangkannya_di_gawang_lawan_ini_mengasumsikan_penjaga_gawang_lawan_tidak_bisa_menghalau_bola_di_android_kemampuan_mengirim_pesan_dimungkinkan_dengan_objek_intent_dengan_bantuan_intent_komponen_android_bisa_meminta_fungsional_dari_komponen_android_lain_saat_kamu_membuka_aplikasi_instagram_di_handphonemu_dan_menggunakannya_untuk_mengambil_foto_kamu_menggunakan_intent_intent_juga_membantu_mengkomunikasikan_bagian_dari_sebuah_aplikasi_perpindahan_dari_satu_layar_aktifitas_ke_layar_lain_dimungkinkan_dengan_intent_kita_bisa_melihatnya_seperti_ini_semua_komponen_aplikasi_dan_layar_dari_perangkat_android_itu_terisolasi_satu_sama_lain_satu_satunya_cara_mereka_bisa_berkomunikasi_adalah_dengan_menggunakan_intent"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JudulIntent" />
+
+    <TextView
+        android:id="@+id/JudulIntent"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:text="@string/txtbtn5"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/isikom5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
